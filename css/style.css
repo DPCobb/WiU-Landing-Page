@@ -1,0 +1,195 @@
+/*----- General Styles (Body, Container etc) -----*/
+
+body{
+    background:#eee;
+    color:#22313F;
+    font-family: 'Open Sans', sans-serif;
+    width:100%;
+    margin:0 auto;
+}
+
+footer{
+    text-align: center;
+    padding:1%;
+    font-size:.5em;
+    font-weight:700;
+}
+
+#container{
+    width:90%;
+    margin:2% auto;
+    padding:1%;
+    background:#D2D7D3;
+    border-radius:10px;
+    overflow: auto;
+    box-shadow: 2px 3px 8px #67809F;
+}
+
+.us-test{
+    margin-top:5%;
+    clear:both;
+}
+
+#project-desc p{
+    float:left;
+}
+/*----- Image styles ------*/
+
+figure{
+    float:right;
+    width:30%;
+    margin:0 auto;
+
+}
+
+figcaption{
+    font-size:.75em;
+
+}
+
+#wave-img{
+    width:100%;
+    height:auto;
+    border:5px solid #fff;
+    border-radius:5px;
+    float:right;
+    display:inline-block;
+}
+
+/*----- Header Styles -----*/
+
+header{
+    font-weight:800;
+    font-size:2em;
+    color:#C5EFF7;
+    background:#336E7B;
+    width:100%;
+    padding:.5%;
+    position:relative;
+}
+
+/*----- Paragraph styles -----*/
+
+.description{
+    width:60%;
+    display:inline-block;
+}
+
+/*----- Table Styles ----- */
+
+table{
+    width:100%;
+    border-collapse: collapse;
+    background: #DADFE1;
+    border-radius:5px;
+}
+
+tr{
+	display: table-row;
+	border-color: inherit;
+}
+th{
+	text-align: left;
+	padding: 1% 1% 1.5%;
+	font-weight: 800;
+	font-size: 1.2em;
+	color: #545257;
+	background: #bbbcc0;
+}
+td{
+	padding: 1em 1em;
+	width: 69%;
+}
+
+.odd{
+    background:#eee;
+}
+
+/*----- Anchor Styles -----*/
+
+a:link, a:visited{
+    text-decoration: none;
+    color:inherit;
+    box-shadow: inset 0 -4px 0 #336E7B;
+}
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    figure img{
+        width: 95%;
+    }
+    p{
+        width: 60%;
+    }
+    td{
+        width: 50%;
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    header, h2{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    figure{
+        width: 98%;
+        float: right;
+    }
+    .description{
+        width: 98%;
+    }
+    figure img{
+        width: 95%;
+    }
+    td{
+        width: 50%;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #container{
+        width: 98%;
+        min-width: 480px;
+        max-width: 767px;
+    }
+    p{
+        width: 95%;
+    }
+    td{
+
+        width: 50%;
+    }
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    figure {
+        display: none;
+    }
+    figcaption{
+        display: none;
+    }
+    .description{
+        width:95%;
+    }
+    .us-test{
+        margin-top: 10px;
+    }
+    th{
+        font-size:1em;
+    }
+    tr{
+        height: 44px;
+        line-height: 44px;
+    }
+    td{
+        width: 50%;
+
+    }
+    a:link{
+        font-size:1em;
+    }
+}
